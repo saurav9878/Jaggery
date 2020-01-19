@@ -15,7 +15,7 @@ if __name__ == '__main__':
             words = l.split(' ')
             d[words[0].strip()] = words[1].strip()
     # server_IP = input('Enter the Server IP : \n')
-    print('Server IP : '+d['Server_IP']+'\n')
+    print('Server IP DISPLAYING......    : '+d['Server_IP']+'\n')
     print('Server Port : '+d['Server_Port']+'\n')
     sam = GenericClient(alias='new_user', serverIP=d['Server_IP'], serverPort=int(d['Server_Port']), transmissionPort=int(d['Transmission_Port']))
     sam.run_time()
